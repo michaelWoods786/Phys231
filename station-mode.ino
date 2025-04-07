@@ -60,7 +60,7 @@ void setup() {
   Serial.print("Connecting to ");
   Serial.println(ssid);
   Serial.print("My MAC address is ");
-  Serial.println(WiFi.macAddress());
+ 
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(200);
@@ -70,7 +70,7 @@ void setup() {
   Serial.println("");
   Serial.print("WiFi connected to IP address: ");
   Serial.println(WiFi.localIP());
-  Serial.println(WiFi.macAddress());
+   Serial.println(WiFi.macAddress());
   server.begin();
 }
 
